@@ -7,7 +7,7 @@ import { Suspense } from "react";
 import {
   RevenueChartSkeleton,
   LatestInvoicesSkeleton,
-  CardSkeleton,
+  CardsSkeleton,
 } from "@/app/ui/skeletons";
 
 export default async function Page() {
@@ -33,7 +33,7 @@ export default async function Page() {
           value={numberOfCustomers}
           type="customers"
         /> */}
-        <Suspense fallback={<CardSkeleton />}>
+        <Suspense fallback={<CardsSkeleton />}>
           <CardWrapper />
         </Suspense>
       </div>
